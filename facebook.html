@@ -1,0 +1,325 @@
+<html>
+    <head>
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                background-color:black;
+            }
+            input[type=text]{
+                left: 5px;
+                width: 250px;
+                height: 35px;
+                box-sizing: border-box;
+                background-color: rgb(100,100 ,100 );
+                border-radius: 25px;
+                font-size: 16px;
+                color: cornsilk;
+                background-image: url(asset/search.png);
+                background-position: 4px 4px;
+                background-repeat: no-repeat;
+                padding: 10px;
+                background-size: 25px;
+            }
+            .mindin{
+                width: 250px;
+                height: 35px;
+                box-sizing: border-box;
+                background-color: rgb(100,100 ,100 );
+                border-radius: 25px;
+                font-size: 16px;
+                color: cornsilk;
+                width: 740px;
+            }
+            ::placeholder{
+                position: relative;
+                left: 30px;
+                color: gainsboro;
+                font-size: 13px;
+            }
+            .clearfix::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .rcorner{
+                border-radius: 50%;
+            }
+            .it{
+                position: relative;
+            }
+            .notification{
+                position: absolute;
+                padding: 1px 5px;
+                top: -8px;
+                right: -8px;
+                color: whitesmoke;
+                background-color: red;
+                border-radius: 50%;
+            }
+            .online{
+                position: relative;
+                padding: 1px 2px;
+                bottom: -25px;
+                right: -30px;
+                color: lime;
+                background-color:lime;
+                border-radius: 50%;
+                z-index: 1;
+            }
+            .it:hover{
+                border-bottom: 5px solid blue;
+                border-left-width: 40px;
+                cursor: pointer;  
+            }
+            .sidenav ul{
+                list-style-type: none;
+                height: 100%;
+                overflow: auto;
+                position: fixed;
+                width: 20%;
+                margin: 0px;
+                padding: 0px;
+                background-color: black;
+                border: 1px solid black;
+            }
+            .sidenav li a{
+                display: block;
+                color: whitesmoke;
+                padding: 7px 10px;
+                text-decoration: none;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+            .sidenav li a:hover{
+                border: gray;
+                background-color: gray;
+                height: 35px;
+            }
+            .dropdown{
+                position: relative;
+                height: 38px;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+            }
+            .dropdown-content a{
+                text-decoration: none;
+                display: block;
+                background-color: gray;
+                width: 285px;
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            .dropbtn{ 
+                cursor: pointer;
+               
+            }
+            .shortcut{
+                background-color: black;
+            }
+            .shortcut:hover{
+                background-color: gray;
+            }
+            .dropbtn:hover{
+                background-color: gray;
+            }
+            .midnav{
+                list-style-type: none;
+                width: 57%;
+                padding: 5px;
+                background-color: black;
+                height: 100%;
+                float: left;
+                position: absolute;
+                left: 310px;
+                position: fixed;
+                overflow: auto;
+            }
+            .rightnav {
+                width: 21%;
+                padding: 5px;
+                background-color: black;
+                height: 100%;
+                float: left;
+                overflow: auto;
+                overflow-x: hidden;
+                position: fixed;
+                left: 1192px; 
+            }
+            .rightnav ul{
+                list-style-type: none;
+            }
+            .rightnav ul li{
+                position: relative;
+                left: -40px;
+            }
+            .rightnav ul li:hover{
+                background-color: gray;
+                border-radius: 5px;
+                width: 320px;
+                display: block;
+            }
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .top{
+                position: absolute;
+                top: -1px;
+                left: 50px;
+            }
+            .contact li{
+                height: 45px;
+            }
+            .mind{
+                height: 100px;
+                margin: auto;
+                width: 800px;
+                background-color: gray;
+                border-radius: 10px;
+            }
+            .stories{
+                height: 180px;
+                width: 100px;
+                background-color: gray;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 30px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <header>
+        <title>facebook.</title>
+    </header>
+    <body>
+        <nav>
+         <div style="background-color: black;" >
+           <a> <img class="rcorner" src="asset/o1.jpg" alt="logo" height="40px" width="40px"></a>
+           <a style="position: absolute;left: 55px;"><form> <input type="text" name="search" placeholder="search facebook.."></form></a>
+           <a class="it" style="position: absolute;left: 500px;"><img style="display: inblock;padding: 5px;border-radius: 50%;background-color: blanchedalmond;height: 25px;width: 25px;" src="asset/chimney-home-icon-transparent-1.png" alt="home" ></a>
+           <a class="it" style="position: absolute;left:600px;"><span class="notification">2</span><img style="display: block;padding: 5px;border-radius: 50%;background-color: whitesmoke;height: 25px;width: 25px;" src="asset/h.jpg" alt=contact > </a>
+           <a class="it" style="position: absolute;left:700px;"><img style="display: block;padding: 5px;border-radius: 50%;background-color: whitesmoke;height: 25px;width: 25px;" src="asset/i.jpg" alt=chat > </a>
+           <a class="it" style="position: absolute;left:800px;"><img style="display: block;padding: 5px;border-radius: 50%;background-color: whitesmoke;height: 25px;width: 25px;" src="asset/jk.jpg" alt=group > </a>
+           <a class="it" style="position: absolute;left:900px;"><img style="display: block;padding: 5px;border-radius: 50%;background-color: whitesmoke;height: 25px;width: 25px;" src="asset/k.jpg" alt=group > </a>
+           <a style="position: absolute;left:1200px;"><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/FB_IMG_1507314625317.jpg" alt=group  ></a>
+           <a style="color: whitesmoke;position: absolute;left: 1240px;"><p style="position: absolute;top: -7px;">asutosh.</p></a>
+           <a style="position: absolute;left:1350px;"><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 25px;width: 25px;" src="asset/i.jpg" alt=group  ></a>
+           <a style="position: absolute;left:1380px;"><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 25px;width: 25px;" src="asset/u.png" alt=group  ></a>
+         </div>
+        </nav>
+        <div class="clearfix">
+            <div class="sidenav">
+               <ul>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/FB_IMG_1507314625317.jpg" alt=group> <p class="top" style="font-size: 15px;">Asutosh dash.</p></a></li>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/k.jpg" alt=covid> <p style="font-size: 15px;position: absolute;top: 48px;left: 50px;">Covid 19 Information center.</p></a></li>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/male.jpg" alt=group> <p class="top" style="font-size: 15px;position: absolute;top: 100px;">friends.</p></a></li>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/i.jpg" alt=message> <p class="top" style="font-size: 15px;position: absolute;top: 150px;">messanger.</p></a></li>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/k.jpg" alt=fund> <p class="top" style="font-size: 15px;position: absolute;top: 200px;">fundraisers..</p></a></li>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/k.jpg" alt=market> <p class="top" style="font-size: 15px;position: absolute;top: 250px;">market place.</p></a></li>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/k.jpg" alt=vdo> <p class="top" style="font-size: 15px;position: absolute;top: 300px;">videos.</p></a></li>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/th 7.jpg" alt=pg> <p class="top" style="font-size: 15px;position: absolute;top: 340px;">pages.</p></a></li>
+                   <li><a><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;" src="asset/jk.jpg" alt=grp> <p class="top" style="font-size: 15px;position: absolute;top: 390px;">groups.</p></a></li>
+                   <li>
+                  <div class="dropdown">     <a ><p style="position: absolute;top: -5px;">see more.</p></a>
+                    <div class="dropdown-content">
+                        <a style="position: absolute;top: 25px;">rooms</a>
+                        <a style="position: absolute;top: 50px;">friends.</a>
+                    </div>
+                  </div></li> 
+                  <hr style="color: gray;">
+                  <h4 style="color: aliceblue;padding: 5px;">shortcuts.</h4> 
+                  <div class="shortcut" style="height: 70px;border-radius: 10px;margin-top: 2px;" >
+                     <img style="size: 10px;padding: 5px;float: left;display: block;height: 60px;width: 60px;;border-radius: 20%" src="asset/k.jpg" alt="page">
+                     <p style="color:whitesmoke;text-align: center;position: relative;top: 25px;">i am a programmer.i have no life.</p>
+                  </div>
+                  <div class="shortcut" style="height: 70px;border-radius: 10px;">
+                    <img style="size: 10px;padding: 5px;float: left;display: block;height: 60px;width: 60px;;border-radius: 20%" src="asset/iu.jpg" alt="page">
+                    <p style="color:whitesmoke;text-align: center;position: relative;top: 25px;left: -50px;">the engineer bro.</p>
+                  </div>
+                  <div class="shortcut" style="height: 70px;border-radius: 10px;">
+                    <p style="color: bisque;text-align: center;position: relative;top: 25px;">filmfare.</p>
+                  </div>
+               </ul>
+               
+            </div>
+           
+            <div class="midnav">
+                
+                    <div class="stories">
+
+                   
+                     <div class="stories" style="float: left;position: absolute;left:121px ;margin-top: 0px;">
+                        <div class="stories" style="float: left;position: absolute;left:85px ;margin-top: 0px;">
+                            <div class="stories" style="float: left;position: absolute;left:85px ;margin-top: 0px;">
+                                <div class="stories" style="float: left;position: absolute;left:85px ;margin-top: 0px;">
+                                    <div class="stories" style="float: left;position: absolute;left:85px ;margin-top: 0px;">
+                                        <div class="stories" style="float: left;position: absolute;left:85px ;margin-top: 0px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="mind" style="margin-top: 10px;height: 70px;">
+                        <p style="color: whitesmoke;margin-top: 10px;margin-left: 40px;">Rooms</p>
+                    </div>
+
+                <div class="mind">
+                    <a> <img class="rcorner" src="asset/FB_IMG_1507314625317.jpg" alt="logo" height="40px" width="40px" style="margin-left: 8px;margin-top: 8px;"></a>
+                    <a style="position: absolute;margin-top: 10px;margin-left: 6px;"><form> <input class="mindin" name="search" placeholder="what's on your mind asutosh?"></form></a>
+                    <hr>
+                </div>
+
+                
+                <div class="mind" style="margin-top: 10px;height: 700px;">
+                    <a><img class="rcorner" style="margin-left: 8px;margin-top: 8px;size: 10px;padding: 5px;float: left;display: block;height: 40px;width: 40px;;border-radius: 20%" src="asset/139942227_455116452321168_7944827810293829439_o.jpg" alt="page"><p style="color:whitesmoke;position: relative;top: 12px;"> Upendra kumar</p><p style="color :aliceblue,position: relative;top: -5px;size: 5px;"> 1 hrs</p></a>
+                    <a><p style="color:white;position: relative;top: -15px;margin-left: 15px;">Lemme drive you.</p><p style="color:darkblue;position: relative;top: -35px;margin-left: 15px;">#Kylie_hearts</p></a>
+                    <a><img style="margin-left: 8px;margin-top: -48px;size: 100px;padding: 5px;float: left;display: block;height: 480px;width: 400px; top: 50px;" src="asset/Kylie-Jenner-Hottest-Bikini-Pictures.jpg" alt="page">
+                        <img style="margin-left: 8px;margin-top: -48px;size: 100px;padding: 5px;float: left;display: block;height: 480px;width: 377px; top: 50px;position: absolute;left: 410px;position: relative;top: -442px;" src="asset/rs_1200x1200-200928154850-kylie-jenner-bikini-instagram-ac-thumbnail4.jpg" alt="page"></a>
+                </div>
+
+            </div>
+            <div class="rightnav">
+                <h4 style="color: gray;">sponsored</h4>
+                <div class="shortcut" style="height: 70px;border-radius: 10px;margin-top: 2px;" >
+                    <img style="size: 10px;padding: 5px;float: left;display: block;height: 60px;width: 60px;;border-radius: 20%" src="asset/opy.jpg" alt="page">
+                    <p style="color:whitesmoke;position: relative;top: 20px;">pay using paytm and earn cashback.</p>
+                    <p style="color: lightgrey;position: relative;bottom: -8px;left: -1px;">paytm.ic.com</p>
+                </div>
+                <hr>
+                <h4 style="color: gray;">birthdays.</h4>
+                <div class="shortcut" style="height: 70px;border-radius: 10px;margin-top: 2px;" >
+                    <img style="size: 10px;padding: 5px;float: left;display: block;height: 60px;width: 60px;;border-radius: 20%" src="asset/tho- Copy.jpg" alt="page">
+                    <p style="color:whitesmoke;position: relative;top: 20px;">christophor nolan and jk rowlings have their birthdays today.</p>
+                </div>
+                <hr>
+                <h4 style="color: gray;">contacts</h4>
+                <img style="float: right;display: block;height: 20px;width: 20px;border-radius: 30%;position: relative;top: -40px;" src="asset/search.png" alt="search">
+                <img style="float: right;margin-right: 4px;display: block;height: 20px;width: 20px;border-radius: 30%;position: relative;top: -40px;" src="asset/th Copy.jpg" alt="search">
+                <div class="contact" style="height: 50px;border-radius: 5px;text-decoration: none;">
+                  <ul >
+                    <li ><a><span class="online" >.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: 15pxpx;" src="asset/IMG-20190814-WA0025.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">Debashis dash.</p></a></li>
+                    <li ><a><span class="online" >.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: 15pxpx;" src="asset/Screenshot_2017-12-30-23-36-29_1.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">kalpana dash.</p></a></li>
+                    <li ><a><span class="online" >.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: 15pxpx;" src="asset/Picture 001.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">pradeep kumar das.</p></a></li>
+                    <li ><a><span class="online">.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: -5px;" src="asset/male.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">paulo chloeo.</p></a></li>
+                    <li ><a><span class="online">.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: -5px;" src="asset/male.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">christophor nolan.</p></a></li>
+                    <li ><a><span class="online">.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: -5px;" src="asset/female.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">jk rowlings.</p></a></li>
+                    <li><a><span class="online">.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: -5px;" src="asset/male.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">harry potter.</p></a></li>
+                    <li><a><span class="online">.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: -5px;" src="asset/male.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">alec benjamin.</p></a></li>
+                    <li><a><span class="online">.</span><img style="display: block;border-radius: 50%;background-color: whitesmoke;height: 35px;width: 35px;position: relative;top: -12px;right: -5px;" src="asset/female.jpg" alt=group> <p style="font-size: 15px;color: whitesmoke;position: relative;top: -55px;right: -48px;">harmione granger.</p></a></li>
+                  </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+    <footer>
+
+    </footer>
+</html>

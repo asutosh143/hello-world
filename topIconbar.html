@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+            ul{
+                list-style: none;
+                padding: 0px;
+                background-color: greenyellow;
+                width: 15%;
+                overflow: auto;
+                position: fixed;
+                height: 100%;
+                margin: 0;
+            }
+            li a{
+                display: block;
+                color: white;
+                background-color: brown;
+                text-align: center;
+                padding: 20px 20px;
+            }
+            li a:hover:not(.active){
+                background-color: black;
+            }
+            .active{
+                background-color: greenyellow;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a class="active">Home</a></li>
+            <li><a>clients</a></li>
+            <li><a>contact</a></li>
+        </ul>
+        <div style="margin-left: 25%;padding: 10px 20px;height: 1000px;">
+            <h1>hii...Rocky...</h1>
+            <h1 id="name"></h1>
+        </div>
+        <script>
+            const person = {
+                fullname : function() {
+                    return this.firstName+" "+this.lastName;
+                }
+            }
+            const person1={
+                firstName : "Asutosh",
+                lastName : "Dash"
+            }
+            const person2 = {
+                firstName : "Pradeep",
+                lastName : "Dash"
+            }
+            document.getElementById("name").innerHTML=person.fullname.call(person1);
+        </script>
+        
+    </body>
+</html>
